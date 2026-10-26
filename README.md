@@ -13,7 +13,6 @@
 
 1. 下载 `DotAbyss_1.14.6_zh-Hans.apk` 并安装
 2. 首次启动会黑屏 1~3 分钟（LemonLoader 部署翻译数据，约 33 MB），属正常现象
-3. 若之前装过旧版汉化且报 "NativeLoader.load failure"，请删除 `Android/data/<pkg>/files/MelonLoader/` 后重开
 
 ## UnityCache 使用方法
 
