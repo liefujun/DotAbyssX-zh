@@ -1,4 +1,4 @@
-# DotAbyss X (ドットアビスX) 简体中文汉化版
+# DotAbyss X (ドットアビスX) 安卓端简体中文汉化版
 
 基于官方版集成社区简体中文翻译（LemonLoader + AbyssMod），包名独立，可与官方原版共存。
 
