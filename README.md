@@ -12,6 +12,8 @@
 
 **v1.15.0**（2026-10-30）：补全 1.15.0 活动、角色本篇与交流剧情翻译，并加入 R18 专属剧情简体译文；修复 1.15.0 字体 fallback 与技能描述残留日文。
 
+> **升级注意**：从 v1.14.6 覆盖升级前，请先删除 `Android/data/jp.co.fanzagames.dotabyss_x_a.mod/files/MelonLoader/`（保留 `UnityCache`）。旧版 interop 可能导致闪退；删除后首次启动会重新部署约 33MB 翻译数据。
+
 ## 说明
 
 - 首次启动黑屏 1~3 分钟属正常现象（LemonLoader 部署约 33 MB 翻译数据）
