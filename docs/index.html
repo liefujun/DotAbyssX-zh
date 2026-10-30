@@ -183,7 +183,8 @@
     <summary>📖 安装说明</summary>
     <div class="guide-body">
       <ol>
-        <li>下载最新版本的 <code>.apk</code> 文件并安装（包名为 <code>jp.co.fanzagames_dotabyss_x_a.mod</code>，可与官方原版共存）。</li>
+        <li>下载最新版本的 <code>.apk</code> 文件并安装（包名为 <code>jp.co.fanzagames.dotabyss_x_a.mod</code>，可与官方原版共存）。</li>
+        <li>从 v1.14.6 汉化版可直接覆盖升级；从 v1.14.4 升级需先卸载（签名不同），卸载前请备份 <code>files/UnityCache</code>。</li>
         <li>首次启动黑屏 1~3 分钟属正常现象（LemonLoader 正在部署翻译数据）。</li>
       </ol>
     </div>
@@ -194,6 +195,7 @@
     <div class="guide-body">
       <ol>
         <li>下载全部 4 个分卷：<code>UnityCache.zip.part01</code> ~ <code>part04</code>，放在同一目录。</li>
+        <li>v1.15.0 与 v1.14.6 的 UnityCache 分卷兼容，可直接使用，无需重新下载资源。</li>
         <li>合并分卷：</li>
       </ol>
       <p style="margin:6px 0 2px;font-size:13px;color:var(--text-dim)">Windows（cmd）：</p>
@@ -202,7 +204,7 @@
       <pre><button class="copy-btn" onclick="copyPre(this)">复制</button>cat UnityCache.zip.part01 UnityCache.zip.part02 UnityCache.zip.part03 UnityCache.zip.part04 &gt; UnityCache.zip</pre>
       <ol start="3">
         <li>解压 <code>UnityCache.zip</code>，将 <code>UnityCache</code> 文件夹复制到：<br>
-          <code>/sdcard/Android/data/jp.co.fanzagames_dotabyss_x_a.mod/files/UnityCache/</code></li>
+          <code>/sdcard/Android/data/jp.co.fanzagames.dotabyss_x_a.mod/files/UnityCache/</code></li>
       </ol>
     </div>
   </details>
@@ -305,7 +307,7 @@ fetch('https://api.github.com/repos/' + REPO + '/releases')
       const parts = ucRel.assets.filter(a => /\.part\d+$/i.test(a.name))
                                 .sort((x, y) => x.name.localeCompare(y.name));
       let html = '<div style="font-size:13px;color:var(--text-dim);margin-bottom:12px">适用于 '
-        + esc(ucRel.tag_name) + ' 版本 · 需下载全部 ' + parts.length + ' 个分卷后合并（方法见下方说明）</div>';
+        + 'v1.14.6 / v1.15.x（资源兼容） · 需下载全部 ' + parts.length + ' 个分卷后合并（方法见下方说明）</div>';
       parts.forEach(a => html += renderAsset(a, true));
       ucList.innerHTML = html;
     }
