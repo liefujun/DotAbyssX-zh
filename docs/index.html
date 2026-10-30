@@ -184,7 +184,9 @@
     <div class="guide-body">
       <ol>
         <li>下载最新版本的 <code>.apk</code> 文件并安装（包名为 <code>jp.co.fanzagames.dotabyss_x_a.mod</code>，可与官方原版共存）。</li>
-        <li>从 v1.14.6 汉化版可直接覆盖升级；从 v1.14.4 升级需先卸载（签名不同），卸载前请备份 <code>files/UnityCache</code>。</li>
+        <li><b>从 v1.14.6 覆盖升级前，请先删除 <code>Android/data/jp.co.fanzagames.dotabyss_x_a.mod/files/MelonLoader/</code></b>（保留 <code>UnityCache</code>）；不清理旧版 interop 可能导致闪退。删除后首次启动会重新部署约 33MB 翻译数据。</li>
+        <li>如果更新后已经闪退：强制停止游戏，删除上述 <code>MelonLoader</code> 文件夹，再重新打开；不要删除 <code>UnityCache</code>。</li>
+        <li>从 v1.14.4 升级因签名不同，需要先卸载；卸载前请备份 <code>files/UnityCache</code>。</li>
         <li>首次启动黑屏 1~3 分钟属正常现象（LemonLoader 正在部署翻译数据）。</li>
       </ol>
     </div>
